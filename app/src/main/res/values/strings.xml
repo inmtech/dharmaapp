@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">DharmaApp</string>
+    <string name="loading">Loading ...</string>
+    <string name="aboutus">ABOUT US</string>
+    <string name="contact">CONTACT</string>
+    <string name="catalogs">CATALOGS</string>
+    <string name="policy">QUALITY POLICY</string>
+    <string name="product_range">PRODUCT RANGE</string>
+    <string name="acSection">A C Section</string>
+    <string name="architecural_section">Architectural Section</string>
+    <string name="hardware_section">Hardware Section</string>
+    <string name="other_section">Other Section</string>
+    <string name="special_section">Special Section</string>
+    <string name="sutecase_section">Sute Case Section</string>
+    <string name="texil_section">Texil Section</string>
+    <string name="transport_section">Transport Section</string>
+    <string name="tub_section">Tub Section</string>
+    <string name="intent_key_path">path</string>
+    <string name="error_pdf_page">Something Went Wrong in this page</string>
+</resources>

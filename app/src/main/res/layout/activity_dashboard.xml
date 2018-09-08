@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".activity.DashboardActivity">
+
+    <ImageView
+        android:id="@+id/imgviewHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp150"
+        android:background="@mipmap/ic_launcher"
+        android:scaleType="fitXY" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp30"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnAboutUs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_press"
+                android:text="@string/aboutus"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/dp20"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnProductRange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen15"
+                android:background="@drawable/button_press"
+                android:text="@string/product_range"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/dp20"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnQualityPolicy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen15"
+                android:background="@drawable/button_press"
+                android:text="@string/policy"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/dp20"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnCatalogs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen15"
+                android:background="@drawable/button_press"
+                android:text="@string/catalogs"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/dp20"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnContact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen15"
+                android:background="@drawable/button_press"
+                android:text="@string/contact"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/dp20"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
