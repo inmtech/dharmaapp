@@ -2,7 +2,6 @@ package app.com.dharmaapp.activity;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -58,8 +57,10 @@ public class DashboardActivity extends Activity implements View.OnClickListener 
     @Override
     public void onClick(View v) {
         if (v == btnAboutUs) {
+            startActivity(new Intent(DashboardActivity.this, AboutUsActivity.class));
             // Handle clicks for btnAboutUs
         } else if (v == btnProductRange) {
+            startActivity(new Intent(DashboardActivity.this, ProductRangeActivity.class));
             // Handle clicks for btnProductRange
         } else if (v == btnQualityPolicy) {
             // Handle clicks for btnQualityPolicy
@@ -69,5 +70,4 @@ public class DashboardActivity extends Activity implements View.OnClickListener 
             // Handle clicks for btnContact
         }
     }
-
 }

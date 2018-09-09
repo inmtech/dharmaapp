@@ -29,6 +29,8 @@
         <activity
             android:name=".activity.PdfViewerActivity"
             android:screenOrientation="portrait" />
+        <activity android:name=".activity.AboutUsActivity" />
+        <activity android:name=".activity.ProductRangeActivity"></activity>
     </application>
 
 </manifest>
