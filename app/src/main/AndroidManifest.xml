@@ -30,7 +30,8 @@
             android:name=".activity.PdfViewerActivity"
             android:screenOrientation="portrait" />
         <activity android:name=".activity.AboutUsActivity" />
-        <activity android:name=".activity.ProductRangeActivity"></activity>
+        <activity android:name=".activity.ProductRangeActivity" />
+        <activity android:name=".activity.QualityPolicyActivity"></activity>
     </application>
 
 </manifest>

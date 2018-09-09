@@ -63,6 +63,7 @@ public class DashboardActivity extends Activity implements View.OnClickListener 
             startActivity(new Intent(DashboardActivity.this, ProductRangeActivity.class));
             // Handle clicks for btnProductRange
         } else if (v == btnQualityPolicy) {
+            startActivity(new Intent(DashboardActivity.this, QualityPolicyActivity.class));
             // Handle clicks for btnQualityPolicy
         } else if (v == btnCatalogs) {
             startActivity(new Intent(DashboardActivity.this, CatalogsActivty.class));

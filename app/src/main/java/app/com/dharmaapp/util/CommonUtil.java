@@ -1,5 +1,6 @@
 package app.com.dharmaapp.util;
 
+import android.app.Activity;
 import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -7,7 +8,11 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.view.View;
 import android.view.Window;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import app.com.dharmaapp.R;
@@ -61,7 +66,22 @@ public class CommonUtil {
         proDialog.show();
     }
 
-
+    public static void showFullImaggeDialog(Context context, int imageview) {
+        final Dialog dialog = new Dialog(context,R.style.dialog);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setCancelable(false);
+        dialog.setContentView(R.layout.dialog_fullimage);
+        ImageView close = (ImageView) dialog.findViewById(R.id.imgviewClose);
+        ImageView dialogImage = (ImageView) dialog.findViewById(R.id.imgviewDialogImage);
+        dialogImage.setBackgroundResource(imageview);
+        close.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+            }
+        });
+        dialog.show();
+    }
 
 
 }
